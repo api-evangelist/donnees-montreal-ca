@@ -1,0 +1,58 @@
+aid: donnees-montreal-ca
+name: Donnees Ouvertes Montreal
+description: >-
+  Donnees Ouvertes Montreal is a municipal government open-data portal for Canada running CKAN.
+  It exposes the CKAN catalog API, a standardized machine-readable interface over approximately 401 datasets,
+  supporting programmatic dataset search, metadata retrieval, and resource access. Because it runs CKAN, it shares a
+  consistent API surface with every other CKAN portal, making it uniformly harvestable and integrable.
+kind: government
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/donnees-montreal-ca/refs/heads/main/apis.yml
+tags:
+  - Open Data
+  - CKAN
+  - Data Catalog
+  - DCAT
+  - Government Data
+  - Municipal Government
+  - Canada
+created: '2026-06-04'
+modified: '2026-06-04'
+specificationVersion: '0.19'
+apis:
+  - aid: donnees-montreal-ca:catalog
+    name: Donnees Ouvertes Montreal CKAN Action API
+    description: >-
+      CKAN Action API for Donnees Ouvertes Montreal, a consistent JSON-over-HTTP interface over a catalog of 401 datasets. Standard actions include package_search, package_show, package_list, organization_list, group_list, tag_list, and resource_search; datastore_search is available where the DataStore extension is enabled. Base URL https://donnees.montreal.ca/api/3/action/.
+    humanURL: https://donnees.montreal.ca
+    baseURL: https://donnees.montreal.ca/api/3/action
+    tags:
+      - CKAN
+      - Action API
+      - Open Data
+      - Catalog
+      - REST
+      - JSON
+    properties:
+      - type: Documentation
+        url: https://docs.ckan.org/en/latest/api/
+      - type: Website
+        url: https://donnees.montreal.ca
+      - type: x-api-endpoint
+        url: https://donnees.montreal.ca/api/3/action/status_show
+common:
+  - type: Website
+    url: https://donnees.montreal.ca
+  - type: Documentation
+    url: https://docs.ckan.org/en/latest/api/
+  - type: Plans
+    url: plans/donnees-montreal-ca-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/donnees-montreal-ca-rate-limits.yml
+  - type: FinOps
+    url: finops/donnees-montreal-ca-finops.yml
+  - type: Review
+    url: review.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
