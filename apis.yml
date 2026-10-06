@@ -43,7 +43,7 @@ tags:
   - Municipal Government
   - Canada
 created: '2026-06-04'
-modified: '2026-06-04'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 apis:
   - aid: donnees-montreal-ca:catalog
@@ -67,6 +67,8 @@ apis:
       - type: x-api-endpoint
         url: https://donnees.montreal.ca/api/3/action/status_show
 common:
+  - url: https://donnees.montreal.ca/blog
+    type: Blog
   - type: DomainSecurity
     url: security/donnees-montreal-ca-domain-security.yml
   - type: Website
